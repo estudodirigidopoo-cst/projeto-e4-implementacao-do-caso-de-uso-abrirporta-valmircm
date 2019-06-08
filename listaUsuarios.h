@@ -13,7 +13,10 @@ class ListaUsuarios {
     private:
         vector <Usuario *> listaIdUsuarios;
     public:
-        ListaUsuarios();
+        bool addUsuario(string id);
+        bool delusuario(string id);
+        
+        
 };
 
 #endif
