@@ -15,8 +15,8 @@ class ListaUsuarios {
     public:
         bool addUsuario(string id);
         bool delusuario(string id);
-        
-        
+        void getDadosUsuario(string id);
+        void getListaIdUsuarios();
 };
 
 #endif

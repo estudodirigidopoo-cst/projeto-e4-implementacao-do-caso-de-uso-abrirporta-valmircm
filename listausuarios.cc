@@ -10,3 +10,11 @@ bool ListaUsuarios::delusuario(string id) {
 
     return true;
 }
+
+void ListaUsuarios::getDadosUsuario(string id){
+
+}
+
+void ListaUsuarios::getListaIdUsuarios() {
+
+}
