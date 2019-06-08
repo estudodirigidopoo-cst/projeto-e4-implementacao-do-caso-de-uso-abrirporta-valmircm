@@ -1,5 +1,5 @@
-#ifndef USUARIO_H
-#define USUARIO_H
+#ifndef LISTADEUSUARIOS_H
+#define LISTADEUSUARIOS_H
 
 #include <iostream>
 #include <vector>
@@ -8,13 +8,12 @@
 
 using namespace std;
 
-class Listausuarios {
+class ListaUsuarios {
 
     private:
-        vector <Usuario *> listaDeUsuarios;
+        vector <Usuario *> listaIdUsuarios;
     public:
-        Listausuarios();
-    
-}
+        ListaUsuarios();
+};
 
 #endif
