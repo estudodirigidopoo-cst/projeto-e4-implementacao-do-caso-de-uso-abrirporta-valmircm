@@ -2,15 +2,15 @@
 #include <cstring>
 #include "listaSalas.h"
 
-bool ListaUsuarios::addSala(string id){
+bool ListaSalas::addSala(string id){
 
 }
-bool ListaUsuarios::delSala(string id){
+bool ListaSalas::delSala(string id){
 
 }
-void ListaUsuarios::getDadosSala(string id){
+void ListaSalas::getDadosSala(string id){
 
 }
-void ListaUsuarios::getListaIdSala(){
+void ListaSalas::getListaIdSala(){
     
 }

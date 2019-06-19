@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class ListaUsuarios {
+class ListaSalas {
 
     private:
         vector <Sala *> listaIdSalas;
