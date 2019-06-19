@@ -12,9 +12,10 @@ class ControladorAcesso {
     private:
 
     public:
-        bool abrirPorta(string id, int senha);
+        bool abrirPorta(string id, string portID, int senha);
         bool fecharPorta(string id);
 
 };
 
+extern ControladorAcesso controlador;
 #endif

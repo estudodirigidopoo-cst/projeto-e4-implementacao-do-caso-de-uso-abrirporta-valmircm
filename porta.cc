@@ -3,7 +3,7 @@
 #include "porta.h"
 
 
-Porta::Porta(int id, int estado){idPorta = id; estadoPorta = estado;}
+Porta::Porta(string id, string estado){idPorta = id; estadoPorta = estado;}
         
 string Porta::getIdPorta() {
     return idPorta;

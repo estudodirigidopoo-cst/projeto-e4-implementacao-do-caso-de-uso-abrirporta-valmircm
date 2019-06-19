@@ -3,8 +3,8 @@
 #include "controladorAcesso.h"
 #include "listaSalas.h"
 
-bool ControladorAcesso::abrirPorta(string id, int senha){
-    getSala(id);
+bool ControladorAcesso::abrirPorta(string id, string portID, int senha){
+    
 }
 
 bool ControladorAcesso::fecharPorta(string id){

@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <cstring>
- 
+
 using namespace std;
 
 class Porta {
@@ -13,7 +13,7 @@ class Porta {
         string estadoPorta;
     public:
 
-        Porta(int id, int estado){}
+        Porta(string id, string estado);
 
         string getIdPorta();
         string getEstadoPorta();
