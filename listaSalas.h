@@ -17,6 +17,7 @@ class ListaSalas {
         bool delSala(string id);
         void getDadosSala(string id);
         void getListaIdSala();
+        bool getSalaPorta(string idPorta, string idSala);
 };
 
 #endif

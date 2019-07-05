@@ -14,6 +14,8 @@ class InterfacePorta {
         int senhaUsuario;
 
     public:
+
+        InterfacePorta(string idPoprta, string idSala);
         bool abrirPorta(int senhaUsuario);
 };
 

@@ -5,11 +5,12 @@
 
 using namespace std;
 
-InterfacePorta porta1;
+InterfacePorta *porta1 = new InterfacePorta("Porta1-Redes1", "Redes1");
 
 int main(void) {
     
     bool flag;
-    porta1.abrirPorta(123456);
+    flag = porta1->abrirPorta(123456);
     
 }
+

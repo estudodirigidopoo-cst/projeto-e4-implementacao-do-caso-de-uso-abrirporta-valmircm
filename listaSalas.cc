@@ -14,3 +14,7 @@ void ListaSalas::getDadosSala(string id){
 void ListaSalas::getListaIdSala(){
     
 }
+
+bool ListaSalas::getSalaPorta(string idPorta, string idSala){
+    
+}
