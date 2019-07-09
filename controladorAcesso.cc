@@ -3,7 +3,12 @@
 #include "controladorAcesso.h"
 
 bool ControladorAcesso::abrirPorta(string idSala, string idPorta, int senhaUsuario){
-    lista1->getSalaPorta(idSala, idPorta);
+    
+    if (lista1->getSalaPorta(idSala, idPorta)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 bool ControladorAcesso::fecharPorta(string id){
