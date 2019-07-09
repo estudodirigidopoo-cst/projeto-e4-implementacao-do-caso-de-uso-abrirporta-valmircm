@@ -14,3 +14,4 @@ bool InterfacePorta::abrirPorta(int senhaUsuario) {
 
     controlador.abrirPorta(this->idSala, this->idPorta, this->senhaUsuario);
 }
+

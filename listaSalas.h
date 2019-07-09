@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 #include <cstring>
+#include <map> 
+#include <iterator>
 #include "sala.h"
 
 using namespace std;
@@ -11,7 +13,8 @@ using namespace std;
 class ListaSalas {
 
     private:
-        vector <Sala *> listaIdSalas;
+        multimap <string, string> listaSalasUsuarios;
+        vector <Sala *> listaSalas;
     public:
         bool addSala(string id);
         bool delSala(string id);
