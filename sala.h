@@ -13,11 +13,12 @@ class Sala {
 
     private:
         string idSala;
-        vector <Porta *> listaIdPortas;
+        vector <Porta *> listaPortas;
     public:
         Sala(string id);
         string getIdSala();
         void getListaDePortas();
+        bool getIdPorta(string idPorta);
 };
 
 #endif
