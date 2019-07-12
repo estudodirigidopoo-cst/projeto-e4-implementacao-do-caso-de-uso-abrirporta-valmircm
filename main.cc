@@ -3,14 +3,17 @@
 #include <cstring>
 #include "interfacePorta.h"
 #include "listaSalas.h"
+#include "listaUsuarios.h"
+#include "controladorAcesso.h"
+#include "sala.h"
 
 using namespace std;
 
-InterfacePorta *porta1 = new InterfacePorta("Porta1-Redes1", "Redes1");
-ListaSalas *lista1 = new ListaSalas();
-
 int main(void) {
-    
-    bool flag = porta1->abrirPorta(123456);
+
+    InterfacePorta *interface1 = new InterfacePorta("Porta1-Redes1", "Redes1");
+
+    bool flag = interface1->abrirPorta(123456);
+
 }
 

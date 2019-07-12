@@ -3,15 +3,17 @@
 #include "interfacePorta.h"
 #include "controladorAcesso.h"
 
-ControladorAcesso controlador;
+ControladorAcesso *controlador1 = new ControladorAcesso();
 
 InterfacePorta::InterfacePorta(string idPorta, string idSala) {
-    this->idPorta = idPorta; 
+    this->idPorta = idPorta;
     this->idSala = idSala;
 }
 
 bool InterfacePorta::abrirPorta(int senhaUsuario) {
 
-    controlador.abrirPorta(this->idSala, this->idPorta, this->senhaUsuario);
+    controlador1->abrirPorta(this->idSala, this->idPorta, senhaUsuario);
+
+    return  true;
 }
 

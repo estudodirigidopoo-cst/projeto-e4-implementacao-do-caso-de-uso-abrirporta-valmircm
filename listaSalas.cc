@@ -2,9 +2,12 @@
 #include <cstring>
 #include "listaSalas.h"
 
-bool ListaSalas::addSala(string id){
+void ListaSalas::addSala(Sala *sala){
     
+    listaSalas.push_back(sala);
+    cout << ">>>>>>>>> SALA: " << sala->getIdSala() << ".........ADICIONADA À LISTA." << "\n";
 }
+
 bool ListaSalas::delSala(string id){
 
 }
@@ -19,14 +22,9 @@ bool ListaSalas::getSalaPorta(string idPorta, string idSala){
 
     for (int i=0;i<listaSalas.size();i++){
         if (idSala == listaSalas[i]->getIdSala()) {
-            cout << "ID da sala encontrado......ID: " << idSala << "\n";
-            
-            
-            bool flag = true;
-            return flag;
+            return true;
             break;
         }
-    } 
-    cout << "ID da sala não encontrado......ID: " << idSala << "\n";
+    }
     return false;
 }

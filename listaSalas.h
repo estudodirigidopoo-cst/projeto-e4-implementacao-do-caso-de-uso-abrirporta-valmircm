@@ -16,7 +16,7 @@ class ListaSalas {
         multimap <string, string> listaSalasUsuarios;
         vector <Sala *> listaSalas;
     public:
-        bool addSala(string id);
+        void addSala(Sala *sala);
         bool delSala(string id);
         void getDadosSala(string id);
         void getListaIdSala();

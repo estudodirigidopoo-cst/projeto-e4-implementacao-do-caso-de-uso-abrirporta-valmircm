@@ -13,7 +13,7 @@ class ListaUsuarios {
     private:
         vector <Usuario *> listaIdUsuarios;
     public:
-        bool addUsuario(string id);
+        void addUsuario(Usuario *usuario);
         bool delusuario(string id);
         void getDadosUsuario(string id);
         void getListaIdUsuarios();

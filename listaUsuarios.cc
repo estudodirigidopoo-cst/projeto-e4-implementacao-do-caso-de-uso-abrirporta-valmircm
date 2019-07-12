@@ -2,10 +2,12 @@
 #include <cstring>
 #include "listaUsuarios.h"
 
-bool ListaUsuarios::addUsuario(string id) {
+void ListaUsuarios::addUsuario(Usuario *usuario) {
 
-    return true;
+    listaIdUsuarios.push_back(usuario);
+    cout << ">>>>>>>>> USUÀRIO: " << usuario->getIdUsuatrio() << ".........ADICIONADO À LISTA." << "\n";
 }
+
 bool ListaUsuarios::delusuario(string id) {
 
     return true;

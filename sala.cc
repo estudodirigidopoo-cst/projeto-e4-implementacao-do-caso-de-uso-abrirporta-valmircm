@@ -2,10 +2,13 @@
 #include <cstring>
 #include "sala.h"
 
-Sala::Sala(string id) {idSala = id;}
+Sala::Sala(string id) {
+    this->idSala = id;
+    cout << ">>>>>>>>> SALA: " << this->idSala << ".........CRIADA" << ".\n";
+}
 
 string Sala::getIdSala() {
-    return idSala;
+    return this->idSala;
 }
 
 void Sala::getListaDePortas(){}
