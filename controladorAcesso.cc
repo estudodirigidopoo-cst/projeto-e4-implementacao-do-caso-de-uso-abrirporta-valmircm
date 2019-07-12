@@ -74,7 +74,7 @@ bool ControladorAcesso::testarAcesso(string idSala, string idUsuario){
 
 bool ControladorAcesso::addUsuario(string idUsuario, int senhaUsuario) {
     listaUsuarios1->addUsuario(new Usuario(idUsuario, senhaUsuario));
-    cout << ">>>>>>>>> USUÀRIO: " << idUsuario << ".........SENHA: " << senhaUsuario << "..........CRIADO.";
+    cout << ">>>>>>>>> USUÀRIO: " << idUsuario << ".........SENHA: " << senhaUsuario << "..........CRIADO.\n";
     return true;
 }
 
