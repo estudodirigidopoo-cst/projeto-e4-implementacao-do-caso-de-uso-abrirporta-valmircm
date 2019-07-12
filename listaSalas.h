@@ -21,6 +21,8 @@ class ListaSalas {
         void getDadosSala(string id);
         void getListaIdSala();
         bool getSalaPorta(string idPorta, string idSala);
+        void addAcessoSala(string idSala, string idUsuario);
+        bool testarAcesso(string idSala, string idUsuario);
 };
 
 #endif

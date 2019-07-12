@@ -15,7 +15,7 @@ class ListaUsuarios {
     public:
         void addUsuario(Usuario *usuario);
         bool delusuario(string id);
-        void getDadosUsuario(string id);
+        string getUsuario(int senha);
         void getListaIdUsuarios();
 };
 

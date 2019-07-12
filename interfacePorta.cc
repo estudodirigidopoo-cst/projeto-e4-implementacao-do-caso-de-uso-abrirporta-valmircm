@@ -12,8 +12,12 @@ InterfacePorta::InterfacePorta(string idPorta, string idSala) {
 
 bool InterfacePorta::abrirPorta(int senhaUsuario) {
 
-    controlador1->abrirPorta(this->idSala, this->idPorta, senhaUsuario);
+    bool flag = controlador1->abrirPorta(this->idSala, this->idPorta, senhaUsuario);
 
-    return  true;
+    if (flag) {
+        return true;
+    } else {
+        return false;
+    }
 }
 

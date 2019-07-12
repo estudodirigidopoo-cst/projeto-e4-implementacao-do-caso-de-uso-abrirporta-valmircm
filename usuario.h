@@ -13,7 +13,7 @@ class Usuario {
         int senhaUsuario;
     public:
         Usuario(string id, int senha);
-        string getIdUsuatrio();
+        string getIdUsuario();
         int getSenhaUsuario();
         int trocaSenha(int senha);
 };

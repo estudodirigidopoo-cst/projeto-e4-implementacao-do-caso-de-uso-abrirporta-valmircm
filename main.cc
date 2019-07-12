@@ -13,7 +13,10 @@ int main(void) {
 
     InterfacePorta *interface1 = new InterfacePorta("Porta1-Redes1", "Redes1");
 
-    bool flag = interface1->abrirPorta(123456);
-
+    if (interface1->abrirPorta(606060)) {
+        cout << ">>>>>>>>>.................................................<<<< ACESSO LIBERADO >>>>." << "\n";
+    } else {
+        cout << ">>>>>>>>>.................................................<<<< ACESSO NEGADO >>>>." << "\n";
+    }
 }
 

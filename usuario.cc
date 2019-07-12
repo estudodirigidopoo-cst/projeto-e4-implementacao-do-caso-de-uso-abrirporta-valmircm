@@ -8,7 +8,7 @@ Usuario::Usuario(string id, int senha){
     cout << ">>>>>>>>> USUÁRIO: " << this->idUsuario << ".........SENHA: " << this->senhaUsuario << ".\n";
 }
 
-string Usuario::getIdUsuatrio() {
+string Usuario::getIdUsuario() {
     return this->idUsuario;
 }
 

@@ -21,7 +21,7 @@ class ControladorAcesso {
         ControladorAcesso();
         bool abrirPorta(string id, string portId, int senha);
         bool fecharPorta(string id);
-
+        bool testarAcesso(string idUsuario, string idSala);
 };
 
 extern ControladorAcesso controlador;

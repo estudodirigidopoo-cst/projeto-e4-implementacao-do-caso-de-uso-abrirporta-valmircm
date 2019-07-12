@@ -28,3 +28,20 @@ bool ListaSalas::getSalaPorta(string idPorta, string idSala){
     }
     return false;
 }
+
+void ListaSalas::addAcessoSala(string idSala, string idUsuario) {
+
+    listaSalasUsuarios.insert(pair <string, string> (idSala, idUsuario));
+    cout << ">>>>>>>>> ACESSO CADASTRADO..........USUÀRIO: " << idUsuario << ".......SALA: " << idSala << "\n";
+}
+
+bool ListaSalas::testarAcesso(string idSala, string idUsuario) {
+
+    multimap <string, string> :: iterator itr; //Declaração do iterator (uma espécie de ponteiro para o container
+    for (itr = listaSalasUsuarios.find(idSala); itr != listaSalasUsuarios.end(); itr++) {
+        if (itr->second == idUsuario) {
+            return true;
+        }
+    }
+    return false;
+}
